@@ -1,0 +1,341 @@
+version: "2.0"
+
+nlu:
+
+- intent: great
+  examples: |
+    - Start
+    - start
+    - go
+    - Go
+    - hi
+    - Hi
+    - hello
+    - Hello
+    - hey
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - Ok.
+    - okay
+    - Okay
+    - ok.
+    - okk
+    - okay.
+    - OKAY
+    - OKay 
+    - ok. 
+    - oK. 
+    - oK...
+    - okay
+    - Okay
+    - okay.
+    - okay... 
+    - oky
+    - OKY!
+    - OKk 
+    - Yes.
+    - yes 
+    - Sure
+    - sure 
+    - I guess so
+    - I Guess So
+    - Sure...
+    - sure 
+    - I guess so
+    - I Guess so
+    - I GUESS SO
+    - Yes, it was
+    - yes it was
+    - Sure.
+    - Go on...
+    - go on...  
+    - yeah
+    - Yeah  
+    - Yeah...
+    - Yes,I would like to
+    - Y, i think
+    - Yes, I think I've experienced these at some point
+    - Yes,I want to try again
+    - yes i want to try again
+    - Ok I'll do that
+    - ok ill do that
+    - Maybe a little
+    - Hmm
+    - hmm
+    - I think, I understand
+    - i think , i understand
+    - I understand what you mean...
+    - Yes, I can think of a few thoughts...
+    - Let me try
+    - Definitely
+    - Yes, I want to add more
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - NO
+    - No
+    - No.
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I'm not sure
+    - im not sure
+    - No, I'm good
+    - no, im good 
+    - I don't understand...
+    - i dont understand
+    - No,I'm good
+    - no im good
+    - No, I'm done for today.
+
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - What's that?
+    - whats that
+    - You too!
+    - you too
+    - You too
+    - exactly...
+    - More than a year
+    - More than a few months    -
+    - More than a week
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - Tell me more
+    - tell me more 
+    - Sadness? Doesn't everyone feel sad
+    - sadness
+    - Can you tell me more?
+    - can you tell me more
+    - Can you give me an examples?    
+    - CAN YOU GIVE ME A EXAMPLE  
+
+- intent: yes_story_part_1
+  examples: |
+    - yes story part 1
+    - yes. story.. part1
+
+- intent: deny_story_part_1
+  examples: |
+    - deny story part 1
+    - no story part 1
+
+# - intent: okay_story_part_2
+#   examples: |
+#     - okay story part 2
+#     - okay story.. part2 
+
+# - intent: okay_story_part_3
+#   examples: |
+#     - okay story part 3
+#     - okay story.. part3
+
+# - intent: umm_yes_exactly
+#   examples: |
+#     - umm_yes_exactly
+#     - umm_yes_exactly...
+
+# - intent: okay_story_part_4
+#   examples: |
+#     - okay story part 4
+#     - okay story.. part4
+ 
+
+- intent: 123son
+  examples: |  
+    - First son
+    - first son
+
+- intent: 123son1
+  examples: |   
+    - Second son
+    - second son
+    
+- intent: 123son2
+  examples: |    
+    - Third son
+    - third son
+
+- intent: let_try6
+  examples: |      
+    - More than a week back
+    - more than a week back
+
+- intent: let_try5
+  examples: |      
+    - Just a few days back
+    - just a few days back
+
+- intent: let_try7
+  examples: |      
+    - More than 2 weeks back
+    - more than 2 weeks back
+
+- intent: option
+  examples: |
+    - Palpitations
+    - Sweating
+    - Stomach pain
+    - Nausea
+    - Sleep issues
+    - Rapid breathing
+    - Shaking/Trembling
+    - Weakness/Dizziness
+    - Muscle pain        
+
+ 
+- intent: umm_exactly_yes
+  examples: |   
+    - umm_exactly_yes
+    - umm_exactly_yes..
+
+- intent: Guided meditation
+  examples: |  
+    - Guided meditation
+    - Guided meditation...
+
+- intent: Deep Breathing
+  examples: |  
+    - Deep Breathing
+    - Deep Breathing...
+
+- intent: Progressive_Muscle_Relaxation
+  examples: |  
+    - Progressive Muscle Relaxation
+    - Progressive_Muscle_Relaxation...
+
+- intent: Grounding 5-4-3-2-1
+  examples: |  
+    - Grounding 5-4-3-2-1
+    - Grounding 5-4-3-2-1...    
+
+
+- intent: option1
+  examples: |  
+    - Palpitations
+    - Palpitations...
+
+- intent: option1_a
+  examples: |  
+    - Sweating 
+    - Sweating...    
+
+- intent: option1_b
+  examples: |  
+    - Stomach pain
+    - Stomach pain...
+
+- intent: option1_c
+  examples: |  
+    - Nausea
+    - Nausea...
+
+- intent: option1_d
+  examples: |  
+    - Sleep issues
+    - Sleep issues...
+
+- intent: option1_e
+  examples: |  
+    - Rapid breathing
+    - Rapid breathing...
+
+- intent: option1_f
+  examples: |  
+    - Shaking/Trembling
+    - Shaking/Trembling...
+
+- intent: option1_g
+  examples: |  
+    - Weakness/Dizziness 
+    - Weakness/Dizziness...
+
+- intent: option1_h
+  examples: |  
+    - Muscle pain
+    - Muscle pain...
+
+- intent: affirm1
+  examples: |
+    - affirm1
+    - Go on... affirm1    
+
+- intent: affirm_yes
+  examples: |
+    - affirm_yes
+    - affirm_Yes!     
+
+- intent: meter_1
+  examples: |
+    - 1. Slightly better than before
+    - 2. Better than before
+    - 1. Slightly better than Before
+    - 2. Better than Before
+ 
+- intent: meter_2
+  examples: |
+    - 3. No change
+    - nochange
+    - 3. No changeE
+    - nochangeE
+ 
+- intent: meter_3
+  examples: |
+    - 4. Slightly worse than before
+    - 5. Worse than before
+    - 4. Slightly worse than Before
+    - 5. Worse than Before    
