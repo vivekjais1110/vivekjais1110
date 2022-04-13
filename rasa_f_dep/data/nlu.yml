@@ -1,0 +1,944 @@
+version: "2.0"
+
+nlu:
+- intent: great
+  examples: |
+    - hey
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Start
+    - start
+    - go
+    - Go
+    - hi
+    - Hi
+    - hello
+    - Hello  
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - Ok.
+    - okay
+    - Okay
+    - ok.
+    - okk
+    - okay.
+    - OKAY
+    - OKay 
+    - ok. 
+    - oK. 
+    - oK...
+    - okay
+    - Okay
+    - okay.
+    - okay... 
+    - oky
+    - OKY!
+    - OKk 
+    - Yes.
+    - yes 
+    - Sure
+    - sure 
+    - I guess so
+    - I Guess So
+    - Sure...
+    - sure 
+    - I guess so
+    - I Guess so
+    - I GUESS SO
+    - Yes, it was
+    - yes it was
+    - Sure.
+    - Umm Yes..
+    - umm ys  
+    - Exactly
+    - Go on...
+    - go on...  
+    - yeah
+    - Yeah  
+    - Yeah...
+    - Yes,I would like to
+    - y i would like to
+    - Y, i think
+    - Yes, I think I've experienced these at some point
+    - Yes,I want to try again
+    - yes i want to try again
+    - Ok I'll do that
+    - ok ill do that
+    - Hmm
+    - hmm
+    - Yes, I can think of a few thoughts...
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I'm not sure
+    - im not sure
+    - No, I'm good
+    - no, im good 
+    - I don't understand...
+    - i dont understand
+    - No,I'm good
+    - no im good
+    - No, I'm done for today.
+
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - What's that?
+    - whats that
+    - I think, I understand
+    - i think , i understand
+    - I understand what you mean...
+    - You too!
+    - you too
+    - You too
+    - exactly...
+ 
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - Tell me more
+    - tell me more 
+    - Sadness? Doesn't everyone feel sad
+    - sadness
+    - Can you tell me more?
+    - can you tell me more
+    - Can you give me an examples?    
+    - CAN YOU GIVE ME A EXAMPLE
+
+- intent: okay_story_part_1
+  examples: |
+    - okay story part 1
+    - okay story.. part1
+
+- intent: okay_story_part_2
+  examples: |
+    - okay story part 2
+    - okay story.. part2 
+
+- intent: okay_story_part_3
+  examples: |
+    - okay story part 3
+    - okay story.. part3
+
+- intent: umm_yes_exactly
+  examples: |
+    - umm_yes_exactly
+    - umm_yes_exactly...
+
+- intent: okay_story_part_4
+  examples: |
+    - okay story part 4
+    - okay story.. part4
+
+- intent: chart
+  examples: |
+    - SITUATION
+    - situation
+    - SITUATIOn
+    - situatioN
+    - sITUATION
+    - Situation
+    - SITUATIONS
+    - situationS
+- intent: chart1
+  examples: |
+    - THOUGHTS/BELIEFS
+    - thoughts  
+    - THOUGHTS/BELIEFSS
+    - thoughtsS
+    - THOUGHTSS/BELIEFS
+    - thoughtsSS 
+    - THOUGHTTS/BELIEFS
+    - thoughtTs 
+- intent: chart2
+  examples: |
+    - EMOTIONS
+    - emotions
+    - EMOTIONs
+    - emotionS
+    - EMOTIONSS
+    - emotionsS
+    - EMOTIONNS
+    - emotionNs
+- intent: chart3
+  examples: |    
+    - BEHAVIOUR
+    - behaviour
+    - BEHAVIOURR
+    - behaviourR
+    - BEHAVIOUUR
+    - behaviouUr
+    - BEHAVIOURS
+    - behaviourSS
+- intent: chart4
+  examples: |    
+    - PHYSIOLOGICAL RESPONSE
+    - phy.response
+    - PHYSIOLOGICAL RESPONSES
+    - phy.responseS
+    - PHYSIOLOGICALL RESPONSE
+    - phy.responseSXS
+    - PHYSIOLOGICAL RESPONSE
+    - phy.responseX
+
+- intent: yes_i_can
+  examples: |
+    - yes_i_can 
+    - yes_i_can_think    
+
+- intent: continue_story
+  examples: |
+    - continue_story
+    - continue...  
+
+- intent: it_feels1_story
+  examples: |
+    - it_feels1_story   
+    - it_feels1_story.. 
+
+- intent: it_feels2_story
+  examples: |
+    - it_feels2_story   
+    - it_feels2_story..   
+
+- intent: okay_story_part_5
+  examples: |
+    - okay story part 5
+    - okay story.. part5   
+
+- intent: meter_1
+  examples: |
+    - 1. Slightly better than before
+    - 2. Better than before
+    - 1. Slightly better than Before
+    - 2. Better than Before
+ 
+- intent: meter_2
+  examples: |
+    - 3. No change
+    - nochange
+    - 3. No changeE
+    - nochangeE
+ 
+- intent: meter_3
+  examples: |
+    - 4. Slightly worse than before
+    - 5. Worse than before
+    - 4. Slightly worse than Before
+    - 5. Worse than Before
+ 
+- intent: thank_you_story
+  examples: |
+    - thank_you_story
+    - thank_you_story...
+
+- intent: affirm_yes
+  examples: |
+    - affirm_yes
+    - affirm_Yes! 
+
+# - intent: it_feels1
+#   examples: |
+#     - It feels good to talk about it
+#     - it feels good to talk about it
+#     - It feels good to talkK about it
+#     - it feels good to talkK about it
+#     - It feels gooD to talk about it
+#     - it feels gooD to talk about it
+#     - It feels good TO talk about it
+#     - it feels good TO talk about it
+#     - It feels good to talk about IT
+#     - it feels good to talk about IT
+#     - I feel relieved
+#     - i feel relieved
+#     - I feel Relieved
+#     - i feel relieveD
+#     - I Feel relieved
+#     - i feel rElieved
+#     - I feEEel relieved
+#     - i feel relieveEEd
+# - intent: it_feels2
+#   examples: |    
+#     - I would like to work on these thoughts and feelings
+#     - i would like to work on these thoughts and feelings
+#     - I would like to work on thesE thoughts and feelings
+#     - i would like to work oN these thoughts and feelings
+#     - I would like to worK on these thoughts and feelings
+#     - i would like to work on these thoughtS and feelings
+#     - I would like to work on these thoughts and Feelings
+#     - i would like TO work on these thoughts and feelings
+# - intent: it_feels3
+#   examples: |       
+#     - I feel relieved
+#     - i feel relieved
+#     - I feel Relieved
+#     - i feel relieveD
+#     - I Feel relieved
+#     - i feel rElieved
+#     - I feEEel relieved
+#     - i feel relieveEEd
+
+# - intent: meter_1
+#   examples: |
+#     - 1. Slightly better than before
+#     - 2. Better than before
+#     - 1. Slightly better than Before
+#     - 2. Better than Before
+#     - 1. Slightly betterR than before
+#     - 2. Better thanN before
+# - intent: meter_2
+#   examples: |
+#     - 3. No change
+#     - nochange
+#     - 3. No changeE
+#     - nochangeE
+#     - 3. No Change
+#     - noChange
+#     - 3. No chHange
+#     - nochAange
+# - intent: meter_3
+#   examples: |
+#     - 4. Slightly worse than before
+#     - 5. Worse than before
+#     - 4. Slightly worse than Before
+#     - 5. Worse than Before
+#     - 4. Slightly worse Than before
+#     - 5. Worse Than before
+#     - 4. Slightly Worse than before
+#     - 5. Worse than BEfore   
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+# - intent: name
+#   examples: |
+#     - my name is [pradyum Soni](name)
+#     - name is [pradyum ahmed ansari](name)
+#     - name: [naman soni](name)
+#     - [Naman Soni](name)
+#     - my name is [Naman chandra Soni](name)
+#     - [Pradyum](name)
+#     - myself [Pradyum kumar khan](name)
+#     - Myself [Pradyum](name)
+#     - [naman soni](name)
+#     - [naman](name)
+#     - I am [Christina Sullivan](name)
+#     - I am [Hattie Rice](name)
+#     - I am [Robert Starks](name)
+#     - My name is [Ashleigh Mees](name)
+#     - [chelsea Parker](name)
+#     - My name is [jessie tripathi](name)
+#     - My name is [Kenneth sharma](name)
+#     - My name is [Lee George](name)
+#     - [Louise Caudill](name)
+#     - My name is [Richard smith](name)
+#     - My name is [Shane Goodyear](name)
+#     - My name is [Sondra Boyd](name)
+#     - My name si [tom Harbin](name)
+#     - [Alexander Kohn](name)
+#     - my name is [ayush singh](name)
+#     - my name is [abhishek jaiswal](name)
+#     - my name is [akansha kumar gupta](name)
+#     - it's [nikhil jaiswal](name)
+#     - [Felicia Cosby](name)
+#     - my name is [Frances Kunkle](name)
+#     - my name is [Greg King](name)
+#     - my name is [james pandey](name)
+#     - my name is [Jermaine Mccleery](name)
+#     - [John Evers](name)
+#     - my name is [Joseph tiwari](name)
+#     - my name is [sushantsingh](name)
+#     - my name is [Nigel Partida](name)
+#     - my name is [Staci Simpson](name)
+#     - [susan crandall](name)
+#     - my name is [Tabitha Schoenthal](name)
+#     - my name's [Michael Peppers](name)
+
+# - intent: input1
+#   examples: |
+#     - [input1](input1)
+#     - [Input1](input1)
+
+# - intent: input1
+#   examples: |
+#     - [input1](input1)
+#     - [Input1](input1)
+#     - [input right](input1)
+#     - [input right1a ](input1)
+#     - [My close friend passed away in an accident](input1)
+#     - [my close friend passed away in an accident](input1)
+#     - [My startup failed](input1)
+#     - [My S/O broke up with me](input1)
+#     - [My S/O cheated on me](input1)
+#     - [my startup failed](input1)
+#     - [my s/o broke up with me](input1)
+#     - [my so broke up with me](input1)
+#     - [my s/o cheated on me](input1)
+#     - [my so cheated on me](input1)
+#     - [I’ve been diagnosed with a <terminal illness>](input1)
+#     - [ive been diagnosed with a terminal illness.](input1)
+#     - [I have leave all my friends and move to another state](input1)
+#     - [i have leave all my friends and move to another state](input1)
+#     - [I don’t enjoy the same activities as my peers do](input1)
+#     - [i don’t enjoy the same activities as my peers do](input1)
+#     - [I dont enjoy the same activities as my peers do](input1)
+#     - [My friends only talk to me when they need something](input1)
+#     - [my friends only talk to me when they need something](input1)
+#     - [I keep getting rejected in my interviews](input1)
+#     - [i keep getting rejected in my interviews](input1)
+#     - [I don’t like my job](input1)
+#     - [i don’t like my job](input1)
+#     - [i dont like my job](input1)
+#     - [i do not like my job](input1)
+#     - [I failed my exam](input1)
+#     - [i failed my exam](input1)
+#     - [I killed/injured a person in an accident](input1)
+#     - [i killed/injured a person in an accident](input1)
+#     - [i killed injured a person in an accident](input1)
+#     - [My teacher told me that I was stupid](input1)
+#     - [my teacher told me that I was stupid](input1)
+#     - [My parents don’t understand when I talk to them about my feelings](input1)
+#     - [my parents don’t understand when I talk to them about my feelings](input1)
+#     - [my parents don’t understand when i talk to them about my feelings](input1)
+#     - [my parents dont understand when I talk to them about my feelings](input1)    
+
+# - intent: input2
+#   examples: |
+#     - [input2](input2)
+#     - [INPUT2](input2)
+
+# - intent: input2
+#   examples: |
+#     - [input2](input2)    
+#     - [I wish I were a better person.](input2)
+#     - [I wish i were a better person](input2)
+#     - [i wish i were a better person](input2)
+#     - [Something has to change.](input2)
+#     - [something has to change](input2)
+#     - [I wish I were somewhere else.](input2)
+#     - [I wish i were somewhere else](input2)
+#     - [i wish i were somewhere else](input2)
+#     - [There must be something wrong with me.](input2)
+#     - [there must be something wrong with me](input2)
+#     - [My life's not going the way I want it to.](input2)
+#     - [my life's not going the way i want it to](input2)
+#     - [my life is not going the way i want it to](input2)
+#     - [my lifes not going the way i want it to](input2)
+#     - [I can't get things together.](input2)
+#     - [i can't get things together](input2)
+#     - [i cant get things together](input2)
+#     - [i can not get things together](input2)
+#     - [No one understands me.](input2)
+#     - [no one understands me](input2)
+#     - [I don't think I can go on.](input2)
+#     - [i don't think i can go on](input2)
+#     - [i dont think i can go on](input2)
+#     - [i do not think i can go on](input2)
+#     - [I feel like I'm up against the world.](input2)
+#     - [i feel like i'm up against the world](input2)
+#     - [i feel like im up against the world](input2)
+#     - [What's wrong with me?](input2)
+#     - [what's wrong with me?](input2)
+#     - [whats wrong with me](input2)
+#     - [what is wrong with me](input2)
+#     - [Why can't I ever succeed?](input2)
+#     - [why cant i ever succeed?](input2)
+#     - [why can not i ever succeed](input2)
+#     - [Nothing feels good anymore.](input2)
+#     - [nothing feels good anymore](input2)
+#     - [What's the matter with me?](input2)
+#     - [whats the matter with me](input2)
+#     - [what is the matter with me](input2)
+#     - [I'm so disappointed in myself.](input2)
+#     - [i'm so disappointed in myself](input2)
+#     - [im so disappointed in myself](input2)
+#     - [i am so disappointed in myself](input2)
+#     - [I'm a loser](input2)
+#     - [i'm a loser](input2)
+#     - [im a loser](input2)
+#     - [i am a loser](input2)
+#     - [I can't stand this anymore.](input2)
+#     - [i cant stand this anymore](input2)
+#     - [i can not stand this anymore](input2)
+#     - [I'm no good](input2)
+#     - [im no good](input2)
+#     - [i am no good](input2)
+#     - [It's just not worth it.](input2)
+#     - [it's just not worth it](input2)
+#     - [its just not worth it](input2)
+#     - [it is just not worth it](input2)
+#     - [I can't get started.](input2)
+#     - [i can't get started](input2)
+#     - [i cant get started](input2)
+#     - [i can not get started](input2)
+#     - [I feel so helpless.](input2)
+#     - [i feel so helpless](input2)
+#     - [I'll never make it.](input2)
+#     - [ill never make it](input2)
+#     - [i'll never make it](input2)
+#     - [I can't finish anything](input2)
+#     - [i can't finish anything](input2)
+#     - [i cant finish anything](input2)
+#     - [i can not finish anything](input2)
+#     - [I'm so weak](input2)
+#     - [i'm so weak](input2)
+#     - [im so weak](input2)
+#     - [i am so weak](input2)
+#     - [My life is a mess.](input2)
+#     - [my life is a mess](input2)
+#     - [My future is bleak.](input2)
+#     - [my future is bleak](input2)
+
+# - intent: input3
+#   examples: |
+#     - [input3](input3)
+#     - [Input3](input3)
+ 
+# - intent: input3
+#   examples: |
+#     - [input3](input3)
+#     - [Input3](input3)       
+#     - [outer wheel](input3)
+#     - [bored](input3)
+#     - [busy](input3)
+#     - [stressed](input3)
+#     - [tired](input3)
+#     - [unfocused](input3)
+#     - [indifferent](input3)
+#     - [disappointed](input3)
+#     - [disapproving](input3)
+#     - [awful](input3)
+#     - [repelled](input3)
+#     - [embarrassed](input3)
+#     - [judgemental](input3)
+#     - [lonely](input3)
+#     - [vulnerable](input3)
+#     - [despair](input3)
+#     - [guilty](input3)
+#     - [depressed](input3)
+#     - [hurt](input3)
+#     - [scared](input3)
+#     - [anxious](input3)
+#     - [insecure](input3)
+#     - [weak](input3)
+#     - [rejected](input3)
+#     - [threatened](input3)
+#     - [startled](input3)
+#     - [confused](input3)
+#     - [excited](input3)
+#     - [amazed](input3)
+#     - [energetic](input3)
+#     - [shocked](input3)
+#     - [let down](input3)
+#     - [humiliated](input3)
+#     - [bitter](input3)
+#     - [aggressive](input3)
+#     - [frustrated](input3)
+#     - [distant](input3)
+#     - [content](input3)
+#     - [interested](input3)
+#     - [proud](input3)
+#     - [accepted](input3)
+#     - [optimistic](input3)
+#     - [powerful](input3)
+#     - [inner wheel](input3)
+#     - [bad](input3)
+#     - [disgusted](input3)
+#     - [sad](input3)
+#     - [fearful](input3)
+#     - [surprised](input3)
+#     - [angry](input3)
+#     - [happy](input3)
+
+# - intent: manual_input
+#   examples: |
+#     - [input4](manual_input)
+#     - [INPUT 4](manual_input)
+    
+# - intent: manual_input
+#   examples: |
+#     - [input4](manual_input)
+#     - [INPUT 4](manual_input)
+#     - [inputT4](manual_input)
+#     - [INPUTT 4](manual_input)
+#     - [inpuUt4](manual_input)
+#     - [INPUUT 4](manual_input)
+#     - [inpuUt4](manual_input)
+#     - [INPPUT 4](manual_input)
+#     - [inPuTt4](manual_input)
+#     - [INPUUT 4](manual_input)
+#     - [inputTT4](manual_input)
+#     - [INNNPUT 4](manual_input)
+
+
+# - intent: manual_input_1
+#   examples: |
+#     - [input5](manual_input_1)
+#     - [Input5](manual_input_1)
+
+# - intent: manual_input_1
+#   examples: |
+#     - [input5](manual_input_1)
+#     - [Input5](manual_input_1)    
+#     - [input left](manual_input_1)
+#     - [input5a](manual_input_1)
+#     - [Life is great and fruitful.](manual_input_1)
+#     - [life is great and fruitful](manual_input_1)
+#     - [Life is meant to be lived fully and deeply.](manual_input_1)
+#     - [life is meant to be lived fully and deeply](manual_input_1)
+#     - [I choose to live my life to the fullest.](manual_input_1)
+#     - [i choose to live my life to the fullest](manual_input_1)
+#     - [Every life experience presents an opportunity to become wiser and grow stronger.](manual_input_1)
+#     - [every life experience presents an opportunity to become wiser and grow stronger](manual_input_1)
+#     - [I love new experiences.](manual_input_1)
+#     - [i love new experiences](manual_input_1)
+#     - [My best gift is my life. ](manual_input_1)
+#     - [my best gift is my life](manual_input_1)
+#     - [I am grateful to be alive.](manual_input_1)
+#     - [i am grateful to be alive](manual_input_1)
+#     - [I am strong and emotionally independent. ](manual_input_1)
+#     - [i am strong and emotionally independent](manual_input_1)
+#     - [I am grateful for all I have achieved.](manual_input_1)
+#     - [i am grateful for all I have achieved](manual_input_1)
+#     - [I bring joy and peace to others. ](manual_input_1)
+#     - [i bring joy and peace to others](manual_input_1)
+#     - [I deserve to be happy therefore](manual_input_1)
+#     - [i deserve to be happy therefore](manual_input_1)
+#     - [I choose to be happy.](manual_input_1)
+#     - [i choose to be happy](manual_input_1)    
+
+
+
+
+
+- intent: chitchat/handleinsult
+  examples: |
+    - FUCK
+    - Fuck
+    - Fuck Off
+    - Fuck off
+    - Fuck u
+    - Fuck you
+    - God you're a moron
+    - I can't believe how dumb you are
+    - I hate you
+    - Loser
+    - Stupid
+    - You are a fool.
+    - You are an idiot.
+    - You are dumb.
+    - You are shortsighted.
+    - You are unintelligent.
+    - You are unknowing.
+    - You brain is dull.
+    - You have no brains.
+    - You have no intelligence.
+    - You have no sense.
+    - You know nothing.
+    - You lack intelligence.
+    - You lack understanding.
+    - You're a dolt.
+    - You're a dunce.
+    - You're an idiot.
+    - You're foolish.
+    - Your intelligence is laughable.
+    - Your mindset is naive.
+    - a baby knows more than you
+    - are u dump?
+    - are you brain dead?
+    - asshole
+    - bitch
+    - bloody dunce
+    - but you are idiot
+    - deal with my ass, you bitch
+    - f*ck
+    - fuck
+    - fuck off
+    - fuck convo
+    - fuck u
+    - fuck you
+    - fuck you machine learning bot
+    - fuck you!
+    - fucking stupid
+    - fucking work
+    - get lost
+    - go away
+    - go fuck yourself
+    - go to hell
+    - how can you be such an idiot?
+    - i hate you
+    - i hate your dumb face
+    - i think that you're a bullshit
+    - idiot
+    - insult you
+    - ok fuck you
+    - ok shut up
+    - leo you look like a burnt sparrow
+    - shit
+    - shit bot
+    - shut up asshole
+    - so dumb
+    - so fucking dumb
+    - sucker
+    - that wasn't very funny
+    - thta was a terrible fucking joke
+    - u r a piece of junk
+    - ur a pussy
+    - what fuck
+    - yep but you are idiot
+    - you are a moron
+    - you are a stupid bot
+    - you are an idiot
+    - you are dumb
+    - you are fucking stupid
+    - you are fucking stupid guy！
+    - you are idiot
+    - you are idiotic
+    - you are so ignorant
+    - you are stupid
+    - you are unintelligent
+    - you are useless bot
+    - you asshole
+    - you idiot
+    - you idiot bot
+    - you son of a bitch
+    - you suck
+    - you're a loser lmao
+    - you're an idiot
+    - you're dumb
+    - you're not smart
+    - you're so dumb
+    - you're the most moronic person I know
+    - your mom gay
+    - you are annoying
+
+- intent: chitchat/nicetomeeyou
+  examples: |
+    - Delighted to make your acquaintance.
+    - Feels great to see you!
+    - Glad to finally meet you!
+    - Glad to make your acquaintance.
+    - Glad to meet you
+    - Glad to meet you!
+    - Glad to meet you.
+    - Glad we've met.
+    - Good to meet you!
+    - Good to see you!
+    - Great interacting with you
+    - Great seeing you
+    - Great to meet you!
+    - Great to meet you.
+    - Happy to get to see you.
+    - Hi Sara, just wanted to test you
+    - Hi, glad to meet you.
+    - Hi, nice to meet you!
+    - I am glad I met you.
+    - I am glad he introduced us.
+    - I had a great meeting with you
+    - I'm glad to have met you!
+    - I'm glad to meet you!
+    - I'm happy that we have met!
+    - I'm pleased to meet you!
+    - I'm so happy that I could meet you.
+    - I'm thrilled to meet you!
+    - It is indeed a pleasure to be able to meet you.
+    - It was a pleasure to have your company.
+    - It was nice to have met you
+    - It's a pleasure to make your acquaintance!
+    - It's a pleasure to meet you!
+    - It's good that I could meet you. It was a pleasure.
+    - It's great to get to know you!
+    - It's great to make your acquaintance!
+    - It's nice to finally meet you.
+    - It's wonderful to meet you!
+    - It’s a pleasure to meet you
+    - It’s great connecting with you.
+    - Lovely to meet you.
+    - Nice to have met you.
+    - Pleased to make your acquaintance!
+    - Pleased to meet you!
+    - Pleased to meet you.
+    - See you around. It was a pleasure meeting you.
+    - Thank you for this meeting. It was great to see you.
+    - nice to meet you
+
+- intent: chitchat/ask_builder
+  examples: |
+    - By whom were you built?
+    - Can I ask the name of the people who designed you?
+    - Do you know who built you?
+    - Do you know who made you?
+    - May I ask who invented you?
+    - Name the person who built you.
+    - Tell me the name of the individual who created you.
+    - Tell me the name of the person who built you.
+    - Tell me the name of your creator.
+    - Tell me who built you.
+    - What is the name of your builder?
+    - What person built you?
+    - Who built you?
+    - Who created and built you?
+    - Who created you?
+    - Who designed you?
+    - Who developed and created you?
+    - Who developed you?
+    - Who fabricated you?
+    - Who generated you?
+    - Who is it that built you?
+    - Who is responsible for making you?
+    - Who is the builder of you?
+    - Who is the legal owner of you?
+    - Who is the name of your builder?
+    - Who is the name of your creator?
+    - Who is the person responsible for building you?
+    - Who is the person that invented you?
+    - Who is the person who built you?
+    - Who is your creator?
+    - Who is your programmer?
+    - Who made you?
+    - Who modeled you?
+    - Who owns you?
+    - Who produced you?
+    - Who put you together?
+    - Who thought to make you?
+    - Who was the one that built you?
+    - Who was the one who made you?
+    - Who was the person that built you?
+    - Who was the person that created you?
+    - Who was the person that made you?
+    - Who was the person who made you?
+    - Who was the person who put you together?
+    - Who went through the trouble of setting you up?
+    - Who were you built by?
+    - Who were you created by?
+    - Who were you made by?
+    - Who's your boss?
+    - Who's your builder?
+    - and who built u?
+    - can you share your boss with me?
+    - i want to get to know your owner
+    - i want to know the company which designed you
+    - i want to know the company which generated you
+    - i want to know the company which invented you
+    - i want to know who invented you
+    - please tell me the company who created you
+    - please tell me who created you
+    - tell me more about you
+    - tell me more about your creators
+    - tell me more about your founders
+    - what is the name of the smart engineer who creted you ?
+    - where were you made?
+    - which company brought you into existence?
+    - which company created you?
+    - which company invented you?
+    - who are created you
+    - who are your author?
+    - who are your parents
+    - who build yoi
+    - who built u?
+    - who built you
+    - who built you?
+    - who create you ?
+    - who created you
+    - who created you?
+    - who developed
+    - who developed you
+    - who do you work for?
+    - who had the idea to build you?
+    - who had the idea to generate you?
+    - who had the idea to make you?
+    - who invent you
+    - who is behind all this?
+    - who is your author
+    - who is your boss
+    - who is your boss tell me
+    - who is your boss?
+    - who is your creator
+    - who is your creator?
+    - who is your daddy
+    - who is your employer?
+    - who is your father ?
+    - who is your mom
+    - who is your parent?
+    - who made u
+    - who made u?
+    - who made you
+    - who made you?
+    - who your author are?
+    - who's builder
+    - why were you made?
+    - you are made by who?
+    - you are working for which company?
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you ?
+    - who r u ?
+    - what's your name ?
+    - what is your name ?
+    - what's yr name ?
+    - Who are you ?
+    - Who r u ?
+    - What's your name ?
+    - What is your name ?
+    - What's yr name ?
